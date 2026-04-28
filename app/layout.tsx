@@ -1,4 +1,12 @@
+import Header from "@/components/layout/Header";
 import "./globals.css";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  weight: ["400", "500"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export default function RootLayout({
   children,
@@ -7,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={inter.variable}>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
