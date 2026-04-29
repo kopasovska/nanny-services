@@ -1,15 +1,58 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --black: #000;
-  --white: #fbfbfb;
-  --deep-green: #103931;
+    --background: #f3f3f3;
+    --foreground: #11101c;
+    --foreground-muted: rgba(17, 16, 28, 0.5);
+    --primary: #103931;
+    --secondary: #fbfbfb;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-inter), sans-serif;
+    background: var(--background);
+    font-family: var(--font-inter), sans-serif;
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-foreground-muted: var(--foreground-muted);
+    --color-primary: var(--primary);
+    --color-secondary: var(--secondary);
+}
+
+@layer components {
+    .text-title {
+        font-weight: 500;
+        font-size: 70px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+    }
+
+    .text-subtitle {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 107%;
+        letter-spacing: -0.02em;
+    }
+
+    .text-body-md {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 111%;
+    }
+
+    .text-body-sm-bold {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .text-body-sm {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+    }
 }
