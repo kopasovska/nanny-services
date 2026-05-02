@@ -24,15 +24,27 @@ const MobileMenuModal = ({ setIsOpen }: MobileMenuModalProps) => {
                 <p>Username</p>
             </div>
             <nav>
-                <ul className="flex flex-col gap-6 items-center text-body-sm">
+                <ul className="flex flex-col gap-8 items-center text-body-sm">
                     <li>
-                        <NavLink href="/">Home</NavLink>
+                        <NavLink href="/" onClick={() => setIsOpen(false)}>
+                            Home
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink href="/nannies">Nannies</NavLink>
+                        <NavLink
+                            href="/nannies"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Nannies
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink href="/favorites">Favorites</NavLink>
+                        <NavLink
+                            href="/favorites"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Favorites
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
