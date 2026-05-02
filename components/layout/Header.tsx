@@ -2,7 +2,7 @@ import NavLink from "./NavLink";
 
 const Header = () => {
     return (
-        <header className="hidden md:flex justify-between items-center h-22 px-32 py-5 bg-primary border border-foreground text-secondary">
+        <header className="hidden lg:flex justify-between items-center h-22 px-32 py-5 bg-primary border border-foreground text-secondary">
             <p className="text-2xl font-medium leading-[117%] tracking-[0.02em]">
                 Nanny.Services
             </p>
@@ -19,9 +19,18 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-            <div className="flex gap-6">
-                <div>Avatar</div>
-                <button>Log out</button>
+            <div className="flex gap-6 items-center">
+                <div className="hidden xl:flex gap-3.5 items-center ">
+                    <div className="w-10 h-10 rounded-[10px] bg-secondary flex justify-center items-center">
+                        <svg className="w-4 h-4 fill-primary">
+                            <use href="/sprite.svg#icon-profile" />
+                        </svg>
+                    </div>
+                    <p>Username</p>
+                </div>
+                <button className="w-33.5 h-12 border border-[rgba(251,251,251,0.4)] rounded-[30px] hover:bg-secondary hover:text-primary transition duration-700 ease-in-out">
+                    Log out
+                </button>
             </div>
         </header>
     );
