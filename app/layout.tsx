@@ -1,8 +1,5 @@
-import Header from "@/components/layout/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import MobileHeader from "@/components/layout/MobileHeader";
-import MobileMenuModal from "@/components/modals/MobileMenuModal";
 
 const inter = Inter({
     weight: ["400", "500"],
@@ -17,11 +14,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.variable}>
-                <MobileHeader />
-                <Header />
-                <main>{children}</main>
-            </body>
+            <body className={inter.variable}>{children}</body>
         </html>
     );
 }

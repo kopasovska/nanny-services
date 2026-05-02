@@ -7,8 +7,9 @@ interface NavLinkProps {
     href: string;
     onClick?: () => void;
     children: React.ReactNode;
+    showIndicator?: boolean;
 }
-const NavLink = ({ href, onClick, children }: NavLinkProps) => {
+const NavLink = ({ href, onClick, children, showIndicator }: NavLinkProps) => {
     const pathname = usePathname();
     const isAtive = pathname === href;
     return (
@@ -16,7 +17,7 @@ const NavLink = ({ href, onClick, children }: NavLinkProps) => {
             href={href}
             onClick={onClick ?? undefined}
             className={
-                isAtive
+                isAtive && showIndicator
                     ? "relative after:content-[''] after:absolute after:-bottom-3 after:left-1/2 after:h-2 after:w-2 after:-translate-x-1/2 after:rounded-full after:bg-secondary"
                     : ""
             }

@@ -26,7 +26,11 @@ const MobileMenuModal = ({ setIsOpen }: MobileMenuModalProps) => {
             <nav>
                 <ul className="flex flex-col gap-8 items-center text-body-sm">
                     <li>
-                        <NavLink href="/" onClick={() => setIsOpen(false)}>
+                        <NavLink
+                            href="/"
+                            onClick={() => setIsOpen(false)}
+                            showIndicator={true}
+                        >
                             Home
                         </NavLink>
                     </li>
@@ -34,6 +38,7 @@ const MobileMenuModal = ({ setIsOpen }: MobileMenuModalProps) => {
                         <NavLink
                             href="/nannies"
                             onClick={() => setIsOpen(false)}
+                            showIndicator={true}
                         >
                             Nannies
                         </NavLink>
@@ -42,6 +47,7 @@ const MobileMenuModal = ({ setIsOpen }: MobileMenuModalProps) => {
                         <NavLink
                             href="/favorites"
                             onClick={() => setIsOpen(false)}
+                            showIndicator={true}
                         >
                             Favorites
                         </NavLink>

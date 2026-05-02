@@ -13,13 +13,19 @@ const Header = () => {
             <nav>
                 <ul className="flex gap-10 text-body-sm">
                     <li>
-                        <NavLink href="/">Home</NavLink>
+                        <NavLink href="/" showIndicator={true}>
+                            Home
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink href="/nannies">Nannies</NavLink>
+                        <NavLink href="/nannies" showIndicator={true}>
+                            Nannies
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink href="/favorites">Favorites</NavLink>
+                        <NavLink href="/favorites" showIndicator={true}>
+                            Favorites
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
@@ -32,7 +38,7 @@ const Header = () => {
                     </div>
                     <p>Username</p>
                 </div>
-                <button className="w-33.5 h-12 border border-[rgba(251,251,251,0.4)] rounded-[30px] hover:bg-secondary hover:text-primary transition duration-700 ease-in-out">
+                <button className="h-12 px-10 border border-secondary/40 rounded-[30px] hover:bg-secondary hover:text-primary transition duration-700 ease-in-out">
                     Log out
                 </button>
             </div>

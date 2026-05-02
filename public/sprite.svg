@@ -12,5 +12,11 @@
             <path d="M24 8L8 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M8 8L24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
         </symbol>
+        <symbol id="icon-arrow" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <polygon points="10 6 10 8 22.59 8 6 24.59 7.41 26 24 9.41 24 22 26 22 26 6 10 6" />
+        </symbol>
+          <symbol id="icon-check" viewBox="0 0 19.999996185302734 15">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 5L0 7.5L7.5 15L20 2.5L17.5 0L7.5 10L2.5 5Z"></path>
+        </symbol>
     </defs>
 </svg>
