@@ -11,7 +11,7 @@ const MobileMenuModal = ({ setIsOpen }: MobileMenuModalProps) => {
                 onClick={() => setIsOpen(false)}
                 className="absolute top-4 right-4 active:rotate-180 transition duration-700 ease-in-out"
             >
-                <svg className="w-6 h-6 fill-secondary">
+                <svg className="w-6 h-6 stroke-secondary">
                     <use href="/sprite.svg#icon-close" />
                 </svg>
             </button>
