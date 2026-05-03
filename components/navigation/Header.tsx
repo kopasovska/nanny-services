@@ -4,7 +4,7 @@ import NavLinks from "./NavLinks";
 
 const Header = () => {
     return (
-        <header className="hidden lg:flex justify-between items-center h-22 px-32 py-5 bg-primary border border-foreground text-secondary">
+        <header className="hidden lg:flex justify-between items-center h-22 px-24 xl:px-32 py-5 bg-primary border border-foreground text-secondary">
             <Link
                 href="/"
                 className="text-2xl font-medium leading-[117%] tracking-[0.02em]"

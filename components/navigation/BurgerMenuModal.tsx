@@ -11,7 +11,7 @@ const BurgerMenuModal = ({
     setIsOpen,
 }: BurgerMenuModalProps) => {
     return (
-        <div className="fixed inset-y-0 right-0 z-50 w-screen md:w-1/2 h-screen py-12 flex flex-col gap-4 justify-between items-center bg-primary text-secondary">
+        <div className="fixed inset-y-0 right-0 z-50 w-screen sm:w-1/2 h-screen px-16 py-12 flex flex-col gap-4 justify-around items-center bg-primary text-secondary">
             <button
                 onClick={() => setIsOpen(false)}
                 className="absolute top-4 right-4 active:rotate-180 transition duration-700 ease-in-out"
@@ -20,8 +20,8 @@ const BurgerMenuModal = ({
                     <use href="/sprite.svg#icon-close" />
                 </svg>
             </button>
-            <NavLinks showIndicator isLoggedIn={isLoggedIn} />
-            <AuthButtons isLoggedIn={isLoggedIn} />
+            <NavLinks showIndicator isLoggedIn={true} variant="modal" />
+            <AuthButtons isLoggedIn={true} variant="modal" />
         </div>
     );
 };

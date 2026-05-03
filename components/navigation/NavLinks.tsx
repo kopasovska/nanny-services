@@ -7,6 +7,7 @@ interface NavLinksProps {
     isLoggedIn?: boolean;
     showIndicator?: boolean;
     onClick?: () => void;
+    variant?: "default" | "modal";
 }
 
 const links = [
@@ -20,12 +21,19 @@ const NavLinks = ({
     isLoggedIn = false,
     showIndicator = false,
     onClick,
+    variant = "default",
 }: NavLinksProps) => {
     const pathname = usePathname();
     const allLinks = isLoggedIn ? [...links, ...privateLinks] : links;
     return (
         <nav>
-            <ul className="flex gap-10 text-body-sm">
+            <ul
+                className={
+                    variant === "modal"
+                        ? "flex flex-col gap-10 items-center"
+                        : "flex gap-10 text-body-sm"
+                }
+            >
                 {allLinks.map(({ href, label }) => {
                     const isActive = pathname === href;
 
