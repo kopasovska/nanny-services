@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import MobileMenuModal from "../modals/MobileMenuModal";
+import BurgerMenuModal from "./BurgerMenuModal";
 
-const MobileHeader = () => {
+const BurgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -16,9 +16,11 @@ const MobileHeader = () => {
                     <use href="/sprite.svg#icon-burger-menu" />
                 </svg>
             </button>
-            {isOpen && <MobileMenuModal setIsOpen={setIsOpen} />}
+            {isOpen && (
+                <BurgerMenuModal isLoggedIn={false} setIsOpen={setIsOpen} />
+            )}
         </header>
     );
 };
 
-export default MobileHeader;
+export default BurgerMenu;

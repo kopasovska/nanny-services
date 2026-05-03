@@ -1,5 +1,5 @@
-import Header from "@/components/layout/Header";
-import MobileHeader from "@/components/layout/MobileHeader";
+import Header from "@/components/navigation/Header";
+import BurgerMenu from "@/components/navigation/BurgerMenu";
 
 export default function AppLayout({
     children,
@@ -8,7 +8,7 @@ export default function AppLayout({
 }>) {
     return (
         <>
-            <MobileHeader />
+            <BurgerMenu />
             <Header />
             <main>{children}</main>
         </>

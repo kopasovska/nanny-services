@@ -26,14 +26,12 @@ body {
 @layer components {
     .text-title {
         font-weight: 500;
-        font-size: 70px;
         line-height: 100%;
         letter-spacing: -0.03em;
     }
 
     .text-subtitle {
         font-weight: 400;
-        font-size: 28px;
         line-height: 107%;
         letter-spacing: -0.02em;
     }
