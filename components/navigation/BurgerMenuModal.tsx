@@ -3,17 +3,17 @@ import NavLinks from "./NavLinks";
 
 interface BurgerMenuModalProps {
     isLoggedIn?: boolean;
-    setIsOpen: (val: boolean) => void;
+    onClose: () => void;
 }
 
 const BurgerMenuModal = ({
     isLoggedIn = false,
-    setIsOpen,
+    onClose,
 }: BurgerMenuModalProps) => {
     return (
         <div className="fixed inset-y-0 right-0 z-50 w-screen sm:w-1/2 h-screen px-16 py-12 flex flex-col gap-4 justify-around items-center bg-primary text-secondary">
             <button
-                onClick={() => setIsOpen(false)}
+                onClick={onClose}
                 className="absolute top-4 right-4 active:rotate-180 transition duration-700 ease-in-out"
             >
                 <svg className="w-6 h-6 stroke-secondary">

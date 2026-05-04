@@ -1,7 +1,7 @@
 const StatsBar = () => {
     return (
         <div className="absolute bottom-4 right-4 md:bottom-12.5 md:right-12.5 p-4 lg:p-8 flex self-start gap-4 justify-center bg-secondary/70 md:bg-secondary rounded-[20px]">
-            <div className="w-13.5 md:h-13.5 flex justify-center items-center bg-primary rounded-xl">
+            <div className="w-13.5 h-13.5 flex justify-center items-center bg-primary rounded-xl">
                 <svg className="w-5 h-4 fill-secondary">
                     <use href="/sprite.svg#icon-check" />
                 </svg>
