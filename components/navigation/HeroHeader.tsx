@@ -14,7 +14,7 @@ const HeroHeader = () => {
                 </Link>
                 <div className="flex justify-between items-center pl-24">
                     <NavLinks />
-                    <AuthButtons isLoggedIn={true} />
+                    <AuthButtons isLoggedIn={false} />
                 </div>
             </div>
         </header>

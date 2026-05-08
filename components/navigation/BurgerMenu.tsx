@@ -17,7 +17,10 @@ const BurgerMenu = () => {
                 </svg>
             </button>
             {isOpen && (
-                <BurgerMenuModal isLoggedIn={false} setIsOpen={setIsOpen} />
+                <BurgerMenuModal
+                    isLoggedIn={false}
+                    onClose={() => setIsOpen(false)}
+                />
             )}
         </div>
     );

@@ -20,8 +20,8 @@ const BurgerMenuModal = ({
                     <use href="/sprite.svg#icon-close" />
                 </svg>
             </button>
-            <NavLinks showIndicator isLoggedIn={true} variant="modal" />
-            <AuthButtons isLoggedIn={true} variant="modal" />
+            <NavLinks showIndicator isLoggedIn={false} variant="modal" />
+            <AuthButtons isLoggedIn={false} variant="modal" />
         </div>
     );
 };
