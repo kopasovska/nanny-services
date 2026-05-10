@@ -11,7 +11,7 @@ const NannyList = () => {
     useEffect(() => {
         const unsubscribe = fetchNannies((data) => setNannies(data));
         return unsubscribe;
-    }, [nannies]);
+    }, []);
 
     return (
         <ul>

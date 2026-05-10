@@ -6,6 +6,7 @@
     --foreground-muted: rgba(17, 16, 28, 0.5);
     --primary: #103931;
     --secondary: #fbfbfb;
+    --image-bg: #e0e0e0;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
     --color-foreground-muted: var(--foreground-muted);
     --color-primary: var(--primary);
     --color-secondary: var(--secondary);
+    --color-image-bg: var(--image-bg);
 }
 
 @layer components {
